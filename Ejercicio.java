@@ -13,9 +13,9 @@ public class Ejercicio {
                     System.out.println("Introduzca un número: ");
                     int parImpar = sc.nextInt();
                     if (parImpar % 2 == 0) {
-                        System.out.println("El numero introducido " + parImpar + " es par");
+                        System.out.println("El numero introducido " + parImpar + " es par.");
                     } else {
-                        System.out.println("El numero introducido" + parImpar + " es impar");
+                        System.out.println("El numero introducido" + parImpar + " es impar.");
                     }
                     break;
                 case 2:
@@ -28,6 +28,22 @@ public class Ejercicio {
                     }
                     break;
                 case 5:
+                    System.out.println("Introduce las medidas de los lados:");
+                    System.out.println("Lado A: ");
+                    int ladoA = sc.nextInt();
+                    System.out.println("Lado B: ");
+                    int ladoB = sc.nextInt();
+                    System.out.println("Lado C: ");
+                    int ladoC = sc.nextInt();
+                    System.out.println("¿Puede ser un triangulo?:");
+                    if (ladoA + ladoB > ladoC || ladoA + ladoC > ladoB || ladoB + ladoC > ladoA) {
+                        System.out.println("Si puede ser un triangulo.");
+                    } else {
+                        System.out.println("No puede ser un triangulo.");
+                    }
+                    break;
+                case 6:
+                    
         } /*else if (ifOrSwitch == 2) {
             System.out.println("Introduce el numero de ejercicio que quieres que resuelva:");
             int ejerciciosSwitch = sc.nextInt();
